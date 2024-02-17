@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GestionDeContacts
 {
@@ -93,15 +94,58 @@ public void RechercherContact(string search)
 
             var contact1 = new Contact("Doe", "John", "123 Main St");
             var contact2 = new Contact("Smith", "Jane", "456 Elm St");
+            var contact3 = new Contact("ahmed", "choulak", "6444 Elm St");
 
             listeContacts.AddContact(contact1);
             listeContacts.AddContact(contact2);
+            listeContacts.AddContact(contact3);
 
-            listeContacts.RechercherContact("Smith");
+            Console.WriteLine("1. Ajouter un contact");
+            Console.WriteLine("2. Afficher la liste des contacts");
+            Console.WriteLine("3. Supprimer un contact");
+            Console.WriteLine("4. Rechercher un contact");
+            Console.WriteLine("5. Quitter");
 
-             listeContacts.AfficherContact();
-            listeContacts.SuppContact("Smith");
-            listeContacts.AfficherContact();
+            bool continuer = true;
+
+            while (continuer)
+            {
+                Console.Write("Votre choix: ");
+                int choix = Convert.ToInt32(Console.ReadLine());
+
+                switch (choix)
+                {
+                    case 1:
+                        Console.Write("Nom: ");
+                        string nom = Console.ReadLine();
+                        Console.Write("Prenom: ");
+                        string prenom = Console.ReadLine();
+                        Console.Write("Adresse: ");
+                        string adresse = Console.ReadLine();
+                        var nouveauContact = new Contact(nom, prenom, adresse);
+                        listeContacts.AddContact(nouveauContact);
+                        break;
+                    case 2:
+                        listeContacts.AfficherContact();
+                        break;
+                    case 3:
+                        Console.Write("Nom du contact à supprimer: ");
+                        string nomSupprimer = Console.ReadLine();
+                        listeContacts.SuppContact(nomSupprimer);
+                        break;
+                    case 4:
+                        Console.Write("Rechercher: ");
+                        string recherche = Console.ReadLine();
+                        listeContacts.RechercherContact(recherche);
+                        break;
+                    case 5:
+                        continuer = false;
+                        break;
+                    default:
+                        Console.WriteLine("Choix invalide.");
+                        break;
+                }
+            }
         }
     }
 }

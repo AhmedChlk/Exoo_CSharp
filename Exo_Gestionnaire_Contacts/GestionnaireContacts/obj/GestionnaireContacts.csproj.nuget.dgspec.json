@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Csharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj": {}
+    "C:\\Exoo_CSharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj": {}
   },
   "projects": {
-    "E:\\Csharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj": {
+    "C:\\Exoo_CSharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Csharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj",
+        "projectUniqueName": "C:\\Exoo_CSharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj",
         "projectName": "GestionnaireContacts",
-        "projectPath": "E:\\Csharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj",
+        "projectPath": "C:\\Exoo_CSharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\GestionnaireContacts.csproj",
         "packagesPath": "C:\\Users\\walid\\.nuget\\packages\\",
-        "outputPath": "E:\\Csharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\obj\\",
+        "outputPath": "C:\\Exoo_CSharp\\Exo_Gestionnaire_Contacts\\GestionnaireContacts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\walid\\AppData\\Roaming\\NuGet\\NuGet.Config"
